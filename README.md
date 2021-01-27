@@ -40,7 +40,8 @@ This directory contains the demo of a neural-based binary analysis tool. We test
     - Run `./preprocess.sh` (clang++-3.7.1 required), or
     - You can directly download the preprocessed datasets from [here](https://www.dropbox.com/s/xkmfvq1qh63jqnq/vul.tar.gz?dl=1) and extract them into `data/`.
     - Run `python preprocess/vul_preprocess.py` to compile the binary code into graphs data
-### Binary decompilation
+
+### Binary decompilation [N-Bref]
 1.  Download dataset
     - Download the demo datasets (raw and preprocessed data) from [here](https://www.dropbox.com/s/yorq24i5lrd8wa4/re.tar.gz?dl=1) and extract them into `data/`. (More datasets to come.)
     - No need to compile the code into graph again as the data has already been preprocessed. 
@@ -52,7 +53,7 @@ This directory contains the demo of a neural-based binary analysis tool. We test
 ### Binary Vulnerability detections
 - Run `cd baseline_model && python run_vulnerability_detection.py` 
 
-### Binary decompilation
+### Binary decompilation [N-Bref]
 1.  Dump the trace of tree expansion:
     - To accelerate the online processing of the tree output, we will dump the trace of the trea data by running `python -m preprocess.dump_trace`
 2.  Training scripts:
@@ -64,7 +65,7 @@ This directory contains the demo of a neural-based binary analysis tool. We test
 
 ## References
 
-[r] Ye, Fangke, et al. "MISIM: An End-to-End Neural Code Similarity System." arXiv preprint arXiv:2006.05265 (2020).
+[1] Ye, Fangke, et al. "MISIM: An End-to-End Neural Code Similarity System." arXiv preprint arXiv:2006.05265 (2020).
 
 [2] Zhou, Yaqin, et al. "Devign: Effective vulnerability identification by learning comprehensive program semantics via graph neural networks." Advances in Neural Information Processing Systems. 2019.
 
