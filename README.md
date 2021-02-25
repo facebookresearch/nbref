@@ -27,7 +27,7 @@ This directory contains the demo of a neural-based binary analysis tool. We test
 1. Download dataset
     - Download POJ-104 datasets from [here](https://www.dropbox.com/s/33fop57jjq0wwa9/POJ-104.tar.gz?dl=1) and extract them into `data/`.
 2. Compile and preprocess
-    - Run `python extract_obj.py -a data/obj` (clang++-3.7.1 required) 
+    - Run `python preprocess/extract_obj.py -asm data/obj` (clang++-3.7.1 required) 
     - Run `python preprocess/split_dataset.py -i data/obj -m p -o data/split.pkl` to split the dataset into train/valid/test sets.
     - Run `python preprocess/sim_preprocess.py` to compile the binary code into graphs data.
     - *(part of the preprocessing code are from [1])
